@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Ayushyam Orthopedic Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Book Your Appointment</h1>
+                <p>Take the first step towards a pain-free life.</p>
+            </div>
+        </section>
+
+        <!-- ===== APPOINTMENT CTA ===== -->
+        <section id="appointment" class="cta-section" style="margin-top: 0; border-radius: 0;">
+            <div class="cta-bg-pattern"></div>
+            <div class="container cta-content">
+                <form class="appointment-form" id="appointment-form" onsubmit="event.preventDefault(); alert('Appointment Request Received! Our team will contact you shortly.');">
+                    <div class="form-row">
+                        <input type="text" placeholder="Full Name *" required>
+                        <input type="tel" placeholder="Phone Number *" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" placeholder="Email Address">
+                        <select required>
+                            <option value="">Select Treatment *</option>
+                            <option>Knee Replacement</option>
+                            <option>Arthroscopy</option>
+                            <option>Sports Injury</option>
+                            <option>Joint Pain Treatment</option>
+                            <option>Trauma Care</option>
+                            <option>Fracture Treatment</option>
+                            <option>Physiotherapy</option>
+                            <option>General Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                        <input type="date" placeholder="Preferred Date">
+                        <textarea placeholder="Describe your condition (optional)" rows="4" style="width: 100%; padding: 15px; border-radius: 12px; border: 1px solid #e2e8f0; font-family: inherit; margin-top: 20px;"></textarea>
+                    </div>
+                    <div class="cta-buttons" style="justify-content: center; margin-top: 30px;">
+                        <button type="submit" class="btn btn-primary"><i data-lucide="calendar-check"></i> Submit Request</button>
+                        <a href="tel:+918140740781" class="btn btn-secondary"><i data-lucide="phone"></i> Call Instead</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>window.AYUSHYAM_PATH_DEPTH = 0;</script>
+    <script src="js/components.js"></script>
+</body>
+</html>

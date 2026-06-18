@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Ayushyam Orthopedic Hospital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about our orthopedic treatments and services.</p>
+            </div>
+        </section>
+
+        <!-- ===== FAQ SECTION ===== -->
+        <section id="faq" class="section">
+            <div class="container">
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question"><span>What orthopedic treatments are available at Ayushyam Hospital?</span><i data-lucide="chevron-down"></i></button>
+                        <div class="faq-answer"><p>We offer a comprehensive range of orthopedic treatments including knee replacement (total & partial), hip replacement, arthroscopy, sports injury treatment, fracture management, trauma care, joint pain treatment, and physiotherapy & rehabilitation programs.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span>Who is the lead surgeon at Ayushyam Hospital?</span><i data-lucide="chevron-down"></i></button>
+                        <div class="faq-answer"><p>Dr. Balkrushna Mangukiya, M.S. (Orthopedic) Gold Medalist, is our lead surgeon. He specializes in Joint Replacement & Arthroscopic Surgery and has over 15 years of experience with 5,000+ successful procedures.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span>Does Ayushyam Hospital provide emergency services?</span><i data-lucide="chevron-down"></i></button>
+                        <div class="faq-answer"><p>Yes, we provide 24×7 emergency orthopedic care including fracture management, dislocation reduction, and trauma care with rapid response times.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span>How can I book an appointment?</span><i data-lucide="chevron-down"></i></button>
+                        <div class="faq-answer"><p>You can book an appointment by calling +91 8140740781, sending a WhatsApp message, or using the appointment form on this website. We'll confirm your slot within minutes.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span>What is the recovery time for knee replacement surgery?</span><i data-lucide="chevron-down"></i></button>
+                        <div class="faq-answer"><p>Most patients can walk with support within 24-48 hours after surgery. Full recovery typically takes 6-12 weeks, with personalized physiotherapy programs to ensure optimal results.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question"><span>Do you accept insurance and offer cashless treatment?</span><i data-lucide="chevron-down"></i></button>
+                        <div class="faq-answer"><p>Yes, we accept most major health insurance providers and offer cashless treatment facilities. Our billing team will assist you with all insurance-related paperwork.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>window.AYUSHYAM_PATH_DEPTH = 0;</script>
+    <script src="js/components.js"></script>
+    <script>
+        // FAQ Accordion Logic
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                button.classList.toggle('active');
+                if (button.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                    answer.style.marginTop = "10px";
+                } else {
+                    answer.style.maxHeight = 0;
+                    answer.style.marginTop = "0";
+                }
+            });
+        });
+    </script>
+</body>
+</html>
